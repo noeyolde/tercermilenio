@@ -1,0 +1,407 @@
+/* media_querys.css */
+
+/* PUNTO DE QUIEBRE PARA CELULAR */
+@media (max-width: 600px) {
+	.navbar {
+		backdrop-filter: none;
+	}
+
+	.container_navegation {
+		width: 100%;
+		min-width: 200px;
+		max-width: none;
+		position: absolute;
+		right: 0;
+		top: 0;
+		backdrop-filter: blur(10px);
+		transform: translateX(100%);
+		transition: .3s linear;
+	}
+
+	.active_button_menu {
+		transform: translateX(0%);
+	}
+
+	.menu ul {
+		height: 100vh;
+		flex-direction: column;
+		justify-content: center;
+		margin-left: auto;
+		background: var(--color-2);
+	}
+
+	.menu ul li {
+		margin: 25px 0px;
+	}
+
+	.item_menu_link::before {
+		display: block;
+		text-align: center;
+		margin-right: 0;
+		margin-bottom: 3px;
+	}
+
+	.container_button_menu_responsive {
+		display: block;
+	}
+
+	header {
+		width: 90%;
+	}
+
+	.container_section {
+		width: 90%;
+	}
+
+	.container_description_section {
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 50px ;
+	}
+
+	.container_description_section ul{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+	}
+
+	.container_description_section .text_section {
+		margin-right: 0;
+		text-align: center;
+	}
+
+	.container_description_section .img_effect {
+		margin-bottom: 20px;
+	}
+
+	/* SECCION 3 */
+
+	.container_card_proyect {
+		flex-direction: column;
+	}
+
+	.container_card_proyect.odd,
+	.container_card_proyect.even {
+		flex-direction: column;
+	}
+
+	.img_effect_proyect {
+		margin: 20px 0;
+	}
+
+	.description_card_proyect {
+		text-align: center;
+	}
+
+	/* CONTACTO */
+
+	.container_form{
+		width: 100%;
+		margin-bottom: 50px;
+		font-size: small;
+		text-align: center;
+	}
+
+	.container_form form .row {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.container_form form .row input,
+	.container_form form .row label,
+	.container_form form .row select,
+	.container_form form .row button {
+		width: 100%;
+	}
+
+	.container_form form .row .file-upload input{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.container_form form .row .file-upload label{
+		display: none;
+	}
+
+	/* FOOTER */
+
+	footer .container_footer {
+		width: 90%;
+		grid-template-columns: 1fr;
+	}
+
+	footer #btn-to-top{
+		font-size: small;
+		width: 25px;
+		height: 25px;
+	}
+
+	footer .columna_izquierda,
+	footer .columna_derecha {
+		align-items: center;
+		text-align: center;
+	}
+
+	footer .fila {
+		grid-template-rows: 1fr;
+	}
+
+	footer .fila .fila2{
+		align-items: baseline;
+		justify-content: center;
+	}
+	footer .fila3 {
+		font-size: x-small;
+	}
+}
+
+/* PUNTO DE QUIEBRE PARA TABLET */
+@media (min-width: 601px) and (max-width: 1024px) {
+	.navbar{
+		padding: 15px 5px;
+	}
+
+	.container_navegation {
+		margin-right: 7px;
+		width: 80%;
+		min-width: auto;
+	}
+
+	/* HEADER */
+
+	header {
+		width: 80%;
+	}
+
+	/* SECCION 1 */
+
+	.container_section {
+		width: 80%;
+		margin-bottom: 30px;
+	}
+	
+	.container_description_section .text_section {
+		margin-right: 30px;
+	}
+
+	.container_description_section .img_effect {
+		margin-bottom: 0;
+	}
+
+	/* SECCION 2 */
+
+	#Actividades .container_description_section #container_card{
+		flex-direction: row;
+		justify-content: center;
+		gap: 20px;
+	}
+
+	/* SECCION 3 */
+
+	.container_card_proyect {
+		flex-direction: column;
+	}
+
+	.container_card_proyect.odd,
+	.container_card_proyect.even {
+		flex-direction: row;
+	}
+
+	.img_effect_proyect {
+		margin: 0 15px;
+	}
+
+	.description_card_proyect {
+		text-align: center;
+	}
+
+	/* CONTACTO */
+
+	.container_form{
+		width: 100%; 
+	}
+
+	.container_form form{
+		padding: 20px;
+		width: 100%;
+		font-size: medium;
+		text-align: center;
+	}
+
+	.container_form form .row {
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		gap: 10px;
+	}
+
+	.container_form form .row input,
+	.container_form form .row select{
+		width: 100%;
+	}
+
+	.container_form form .row button{
+		width: 50%;
+	}
+
+	.container_form form .row .file-upload{
+		display: block;
+	}
+
+	.container_form form .row .file-upload input{
+		width: 80%;
+	}
+
+	/* FOOTER */
+
+	footer .container_footer {
+		width: 80%;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	footer .columna_izquierda {
+		align-items: flex-start;
+		text-align: center;
+	}
+	
+	footer .fila {
+		grid-template-rows: 2fr 1fr;
+	}
+	
+	footer .fila3 p{
+		font-size: small;
+		text-align: end;
+	}
+}
+
+/* PUNTO DE QUIEBRE PARA PC */
+@media (min-width: 1025px) and (max-width: 1600px) {
+	.navbar {
+		padding: 15px 30px;
+	}
+
+	.container_navegation {
+		width: 50%;
+		min-width: 600px;
+		max-width: 700px;
+	}
+
+	/* HEADER */
+
+	header {
+		width: 60%;
+	}
+
+	/* NOSOTROS */
+
+	.container_section {
+		width: 60%;
+		margin-bottom: 50px;
+	}
+
+	.container_description_section {
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.container_description_section .text_section {
+		margin-right: 50px;
+	}
+
+	.container_description_section .img_effect {
+		margin-bottom: 0;
+	}
+
+	/* SECCION2 */
+
+	.container_description_section #container_card{
+		gap: 25px;
+	}
+
+	/* SECCION 3 */
+
+	.container_card_proyect {
+		flex-direction: row;
+	}
+
+	.container_card_proyect.odd{
+		flex-direction: row-reverse;
+	}
+	.container_card_proyect.even {
+		flex-direction: row;
+	}
+
+	.img_effect_proyect {
+		margin: 0 20px;
+	}
+
+	.description_card_proyect {
+		text-align: right;
+	}
+
+	/* CONTACTO */
+
+	.container_form{
+		width: 100%; 
+	}
+
+	.container_form form{
+		padding: 20px;
+		width: 100%;
+		font-size: large;
+		text-align: center;
+	}
+
+	.container_form form .row {
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		font-size: large;
+		gap: 10px;
+	}
+
+	.container_form form .row input,
+	.container_form form .row select{
+		width: 100%;
+	}
+
+	.container_form form .row button{
+		width: 100px;
+	}
+
+	.container_form form .row .file-upload{
+		display: block;
+	}
+
+	.container_form form .row .file-upload input{
+		width: 80%;
+	}
+
+	/* FOOTER */
+
+	footer {
+		margin-top: 30px;
+	}
+
+	footer .container_footer {
+		width: 60%;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	footer .columna_izquierda {
+		align-items: flex-start;
+		text-align: left;
+	}
+
+	footer .fila {
+		grid-template-rows: 2fr 1fr;
+	}
+
+	footer .fila .fila2,
+	footer .fila3 {
+		align-items: flex-end;
+		justify-content: flex-end;
+		font-size: small;
+	}
+}

@@ -1,0 +1,56 @@
+{
+    "actividades_destacadas" : [
+        {
+            "id":1,
+            "title": "Escuela Participante de Proyectos de Feria de Ciencias",
+            "fs_path":"./assets/img/feria-robotica.jpg"
+        },
+        {
+            "id":2,
+            "title": "Participante en “Programa Jóvenes con Más y Mejor Trabajo”",
+            "fs_path":"./assets/img/jovenes-mas-trabajo.jpg"
+        },
+        {
+            "id":3,
+            "title": "Talleres de Robótica Comunitaria.",
+            "fs_path":"./assets/img/taller-robotica.jpg"
+        },
+        {
+            "id":4,
+            "title": "Competencia Interna de Robótica: 'Desafío Innovación Tecnológica'",
+            "fs_path":"./assets/img/desafio-robotica.jpg"
+        }
+    ],
+    "projects": [
+        {
+            "id": 1,
+            "title": "PROGRAMACIÓN Y ROBOTICA",
+            "picture": "./assets/img/lenguajes-programacion.jpg",
+            "description": "Proyecto interdisciplinario sobre el 'Uso de Programación y Robótica' en nivel secundario para medir la contaminación ambiental usando Arduino.",
+            "lenguajes": [
+                "PYTHON",
+                "ARDUINO"
+            ]
+        },
+        {
+            "id": 2,
+            "title": "ENERGÍA RENOVABLE Y SOSTENIBILIDAD",
+            "picture": "./assets/img/tecnologia.jpg",
+            "description": "Proyecto innovador liderado por un alumno destacado sobre el 'Uso de Energías Renovables' en el colegio para reducir la huella de carbono. El proyecto incluye la instalación de paneles solares y el desarrollo de un sistema de monitoreo de energía usando Raspberry Pi.",
+            "lenguajes": [
+                "PYTHON",
+                "RASPBERRY PI"
+            ]
+        },
+        {
+            "id": 3,
+            "title": "ROBOTS DE ASISTENCIA PERSONAL",
+            "picture": "./assets/img/cuidado-robot.jpg",
+            "description": "Proyecto dedicado al diseño y construcción de robots de asistencia personal para ayudar a personas con discapacidades. Los estudiantes utilizan tecnologías como sensores de movimiento y voz, y lenguajes de programación como C++ y Java para crear prototipos funcionales.",
+            "lenguajes": [
+                "C++",
+                "JAVA"
+            ]
+        }
+    ]
+}
